@@ -44,6 +44,9 @@ export default function Index() {
                 >
                   Github Star
                 </a>
+                <button className="bg-lightBlue-500 text-white active:bg-lightBlue-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button">
+  Romthan mabrouk
+</button>
               </div>
             </div>
           </div>
@@ -51,7 +54,7 @@ export default function Index() {
 
         <img
           className="absolute top-0 b-auto right-0 pt-16 sm:w-6/12 -mt-48 sm:mt-0 w-10/12 max-h-860px"
-          src={require("assets/img/pattern_react.png").default}
+          src={require("assets/img/raslen.jpg").default}
           alt="..."
         />
       </section>
