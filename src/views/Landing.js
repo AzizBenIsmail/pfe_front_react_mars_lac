@@ -5,6 +5,9 @@ import { Link } from "react-router-dom";
 
 import Navbar from "components/Navbars/AuthNavbar.js";
 import Footer from "components/Footers/Footer.js";
+import { FaCarSide } from "react-icons/fa6";
+import { GiKickScooter } from "react-icons/gi";
+import CategDropdowns from "components/Dropdowns/CategDropdowns";
 
 export default function Landing() {
   return (
@@ -68,7 +71,7 @@ export default function Landing() {
                 <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
                   <div className="px-4 py-5 flex-auto">
                     <div className="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-red-400">
-                      <i className="fas fa-award"></i>
+                      <FaCarSide size={40} />{" "}
                     </div>
                     <h6 className="text-xl font-semibold">Awarded Agency</h6>
                     <p className="mt-2 mb-4 text-blueGray-500">
@@ -83,7 +86,7 @@ export default function Landing() {
                 <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
                   <div className="px-4 py-5 flex-auto">
                     <div className="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-lightBlue-400">
-                      <i className="fas fa-retweet"></i>
+                      <GiKickScooter size={40} />{" "}
                     </div>
                     <h6 className="text-xl font-semibold">Free Revisions</h6>
                     <p className="mt-2 mb-4 text-blueGray-500">
@@ -93,18 +96,27 @@ export default function Landing() {
                   </div>
                 </div>
               </div>
-
               <div className="pt-6 w-full md:w-4/12 px-4 text-center">
-                <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
-                  <div className="px-4 py-5 flex-auto">
-                    <div className="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-emerald-400">
-                      <i className="fas fa-fingerprint"></i>
+                <div className="hover:-mt-4 bg-whiteshadow-lg rounded-lg ease-linear transition-all duration-150">
+                  <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
+                    <div className="px-4 py-5 flex-auto">
+                      <div className="flex flex-wrap justify-center">
+                        <div className="w-6/12 sm:w-4/12 px-4">
+                          <img
+                            src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80"
+                            alt="..."
+                            className="shadow rounded max-w-full h-auto align-middle border-none"
+                          />
+                        </div>
+                      </div>
+                      <h6 className="text-xl font-semibold">
+                        Verified Company
+                      </h6>
+                      <p className="mt-2 mb-4 text-blueGray-500">
+                        Write a few lines about each one. A paragraph describing
+                        a feature will be enough. Keep you user engaged!
+                      </p>
                     </div>
-                    <h6 className="text-xl font-semibold">Verified Company</h6>
-                    <p className="mt-2 mb-4 text-blueGray-500">
-                      Write a few lines about each one. A paragraph describing a
-                      feature will be enough. Keep you user engaged!
-                    </p>
                   </div>
                 </div>
               </div>
@@ -118,6 +130,7 @@ export default function Landing() {
                 <h3 className="text-3xl mb-2 font-semibold leading-normal">
                   Working with us is a pleasure
                 </h3>
+                <CategDropdowns />
                 <p className="text-lg font-light leading-relaxed mt-4 mb-4 text-blueGray-600">
                   Don't let your uses guess by attaching tooltips and popoves to
                   any element. Just make sure you enable them first via

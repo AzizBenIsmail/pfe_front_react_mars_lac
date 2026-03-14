@@ -1740,6 +1740,10 @@ select {
   margin-right: 1rem;
 }
 
+.mr-6 {
+  margin-right: 1.5rem;
+}
+
 .mb-4 {
   margin-bottom: 1rem;
 }
@@ -1847,6 +1851,11 @@ select {
 .hover\:-mt-4:hover {
   margin-top: -1rem;
 }
+
+.hover\:-mt-6:hover {
+  margin-top: -5rem;
+}
+
 
 .max-h-860-px {
   max-height: 860px;
