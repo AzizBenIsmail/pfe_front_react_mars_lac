@@ -1240,7 +1240,10 @@ select {
   --tw-bg-opacity: 1;
   background-color: rgba(51, 65, 85, var(--tw-bg-opacity));
 }
-
+.bg-NewColor {
+  --tw-bg-opacity: 1;
+  background-color: rgba(224, 122, 95, var(--tw-bg-opacity));
+}
 .bg-blueGray-800 {
   --tw-bg-opacity: 1;
   background-color: rgba(30, 41, 59, var(--tw-bg-opacity));
